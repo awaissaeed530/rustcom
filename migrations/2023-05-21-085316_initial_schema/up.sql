@@ -1,0 +1,5 @@
+CREATE TABLE products (
+  id VARCHAR NOT NULL PRIMARY KEY,
+  name VARCHAR NOT NULL,
+  description VARCHAR
+)
