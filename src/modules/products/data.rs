@@ -45,6 +45,6 @@ pub fn update_product(
 pub fn delete_product(product_id: String, conn: &mut PgConnection) -> Result<(), DbError> {
     diesel::delete(products.find(product_id))
         .execute(conn)
-        .expect("Error deleting posts");
+        .expect("Error deleting product");
     Ok(())
 }
